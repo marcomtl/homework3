@@ -94,10 +94,6 @@ a.skip{
   position: absolute;
 }
 
-/* a.skip:focus{
-  position: absolute;
-  left: 10px;
-} */
 
 
 
@@ -109,8 +105,8 @@ nav a:focus{
 .container{
   /* Requirement 5 code here*/
   display: grid;
-  grid-column: 1fr 5fr 1fr;
-  row-gap: 30px;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-row-gap: 30px;
 }
 
 /* Requirements 6-10 here: */
@@ -129,57 +125,60 @@ nav a:focus{
 
 /* 7 */
 .about{
-  grid-column-start: 2;
+  grid-column: 2/3;
   grid-row: 1;
 }
 
 .clients{
-  grid-column-start: 2;
+  grid-column: 2/3;
   grid-row: 2;
 }
 
 .method{
-  grid-column-start: 2;
+  grid-column: 2/3;
   grid-row: 3;
 
 }
 
 .contact{
-  grid-column-start: 2;
+  grid-column: 2/3;
   grid-row: 4;
 }
 
 /* 8 & 9*/
 img{
   width: 100%;
-  max-height: 500px;
 }
 .clients-image{
   width: 100%;
   grid-column: 1/ span 3;
   max-height: 500px;
-  grid-row: 2;
+  overflow: hidden;
+  grid-row: 2/3;
   }
 
 .method-image{
   width: 100%;
   grid-column: 1/ span 3;
   max-height: 500px;
-  grid-row: 3;
+  overflow: hidden;
+  grid-row: 3/4;
   }
 
 .about-image{
   width: 100%;
   grid-column: 1/ span 3;
   max-height: 500px;
-  grid-row: 1;
+  overflow: hidden;
+  grid-row: 1/2;
   }
 
 .contact-image{
   width: 100%;
   grid-column: 1/ span 3;
   max-height: 500px;
-  grid-row: 4;
+  overflow: hidden;
+  grid-row: 4/5;
   }
 
   /* Question about this (Check that by making sure there is always a gap between the rows.)
