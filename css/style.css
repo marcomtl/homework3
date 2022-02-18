@@ -228,7 +228,6 @@ img{
 
 .method{
   grid-column: 3/ span 2;
-
 }
 
 .contact{
@@ -250,6 +249,7 @@ img{
 .contact-image{
   grid-column: 3/ span 2;
   }
+
 }
 /** Code for prefers reduced motion **/
 /* Make no changes below this line.
