@@ -187,13 +187,10 @@ img{
 /* 10 */
 .text{
   align-self: center;
-  max-height: 25%;
+  max-height: 25vh;
   overflow: scroll;
 }
 
-text:focus{
-  overflow: scroll;
-}
 
 /* right click inspect click phone next to axe dev tools and go to responsive and change to phone*/
 
